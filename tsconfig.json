@@ -1,7 +1,6 @@
 {
     "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "allowJs": true,
         "target": "es2018",
         "module": "commonjs",
         "moduleResolution": "node",
@@ -23,7 +22,7 @@
         "outDir": "dist",
         "sourceMap": true
     },
-    "include": ["src"],
+    "include": ["src", "api"],
     "exclude": ["node_modules"]
 }
   
