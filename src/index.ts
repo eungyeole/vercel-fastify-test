@@ -1,11 +1,5 @@
-import type { FastifyReply, FastifyRequest } from "fastify";
+import { createApp } from "./app";
 
-export default async function routes(fastify, options) {
-  fastify.get("/", async (request: FastifyRequest, reply: FastifyReply) => {
-    return { hello: "world" };
-  });
+const app = createApp();
 
-  fastify.get("/hi", async (request: FastifyRequest, reply: FastifyReply) => {
-    return { hi: "zakiego" };
-  });
-}
+app.listen({ port: 3000 });
