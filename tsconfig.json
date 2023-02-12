@@ -1,29 +1,14 @@
 {
-    "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "allowJs": false,
-        "target": "es2018",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "declaration": true,
-        "pretty": true,
-        "noEmitOnError": true,
-        "strict": true,
-        "resolveJsonModule": true,
-        "removeComments": true,
-        "newLine": "lf",
-        "noUnusedLocals": true,
-        "noFallthroughCasesInSwitch": true,
-        "useDefineForClassFields": true,
-        "forceConsistentCasingInFileNames": true,
-        "skipLibCheck": true,
-        "lib": [
-          "esnext"
-        ],
-        "outDir": "dist",
-        "sourceMap": true
-    },
-    "include": ["src", "api"],
-    "exclude": ["node_modules"]
-}
   
+      "target": "es2020",
+      "module": "commonjs",
+      "outDir": "public",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      
+      /* Type Checking */
+      "strict": true,
+      "skipLibCheck": true
+    }
+  }
