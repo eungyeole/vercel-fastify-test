@@ -1,0 +1,35 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Fastify",
+    "extends": "./base.json",
+    "compilerOptions": {
+        "composite": false,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "inlineSources": false,
+        "isolatedModules": true,
+        "noUnusedParameters": false,
+        "preserveWatchOutput": true,
+        "target": "es2018",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "pretty": true,
+        "noEmitOnError": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "newLine": "lf",
+        "noUnusedLocals": true,
+        "noFallthroughCasesInSwitch": true,
+        "useDefineForClassFields": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "lib": [
+          "esnext"
+        ]
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}
+  
